@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My First | Responsive Navigation menu</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+      <style type="text/css">
+      * {
+      padding:0;
+      margin:0;
+      text-decoration:none;
+      list-style:none;
+      font-weight:lighter;
+      }
+      body {
+      background: #efefef;
+      font-size: 15px;
+      color: #777;
+      font-family: sans-serif;
+      }
+      /*#This is the header part###*/
+      .container {
+      width: 1000px; 
+      height: 50px;
+      max-width:1200px;
+      margin: 0 auto;
+      background:purple;
+      overflow:hidden;
+      position:fixed;
+      display:block;
+      top: 0;
+      margin:auto 0;
+      padding:;
+      }
+      /*_____logo____*/
+      .logo {
+      display: block;
+      background: purple  ;
+      margin-bottom: 15px 0;
+      border-radius: 3px;
+      box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.6);
+      margin:0 auto;
+      float:left;
+      padding:9.5px;
+      width:200px;
+      text-align:center;
+      color: #fff;
+      font-weight:lighter;
+      font-size:26px;
+      }
+      /*_______Navigation bar_______*/
+      .navbar {
+      display: block;
+      background: purple  ;
+      margin-bottom: 15px 0;
+      border-radius: 3px;
+      box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.6);
+      margin:0 auto;
+      float:right;
+      }
+      .navbar ul
+      {
+      margin:0;
+      padding:0;
+      display:block;
+      }
+      .navbar li {
+      margin:0;
+      padding:0;
+      display:inline-block;
+      color: #def1f0;
+      background: purple  ;
+      margin-bottom: 15px 0;
+      border-radius: 5px;
+      box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.6);
+      }
+      .navbar li a 
+      {
+      color: #def1f0;
+      padding:15px 20px;
+      display:inline-block;
+      outline: 0;
+      font-weight: 500;
+      }
+      .navbar ul li:hover ul{display: block;}
+      .navbar ul li ul
+      {
+      position: absolute;
+      display: none;
+      width: 200px;
+      padding-top: 0;
+      position:fixed;
+      }
+      .navbar ul li ul li {
+      display: block;
+      width: 200px;
+      text-align:center;
+      border-bottom:0.5px solid #fff;
+      box-shadow: 0 3px 5px 0 rgba(0,0,0.6,0);
+      border-radius: px;
+      }
+      .navbar ul li ul li:hover {
+      border-radius:50px;
+      }
+      .navbar ul li ul li a:hover{
+      background: #fff;
+      width: 200px;
+      transition:.3s;
+      color: #000;
+      border-radius:50px;
+      cursor:pointer;
+      }
+      .arrow-down {
+      height:0;
+      width:0;
+      border-top: 5px solid #def1f0;
+      border-right: 5px solid transparent ;
+      border-left: 5px solid transparent;
+      position:relative;
+      top: 15px;
+      right: -5px;
+      content: '';
+      }
+      .navbar li:hover .arrow-down {border-top: 5px solid #;}
+      /*-----End of Navbar______*/
+      /*-------End of Header#####*/
+      
+      
+      
+      
+      video {
+      play-during:;
+      pause:pause;
+      }
+      
+      
+      
+      
+      
+      
+      
+      /* Icon *******/
+      .Icon 
+      { 
+      display:blok;
+      margin-top:px;
+      background: #fff;
+      margin-left:300px;
+      }
+      .Icon li 
+      {
+      float: left; 
+      margin-left: 10px;
+      }
+      .Icon li a
+      {
+      width:80px;
+      height:80px;
+      background: #fff;
+      text-align:center;
+      line-height:80px;
+      margin:0 10px;
+      font-size:35px;
+      display:block;
+      color:#000;
+      border-radius:50%;
+      }
+      .Icon li a:hover
+      {
+      background: #3e3e3e; 
+      transition:.3s; 
+      border: 2px solid #777; 
+      box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5) ;
+      }
+      /*###End of Content section */
+     /*####This is the footer section */
+      footer {
+      
+      height: 300px;
+      width:100%;
+      background:purple;
+      display:block;
+      box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.6);
+      }
+      .links {
+      float:left;
+      padding-right: 100px;
+      margin:50px 13px;
+      width: 200px;
+      }
+      .links h4
+      {
+      border-bottom: 2px solid #777;
+      box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.6);
+      color: #fff;
+      font-family:Tahoma,Arial,sans-serif;
+      font-size: 24px;
+      width: 200px;
+      padding:10px;
+      }
+      .links ul li
+      {
+      padding: 10px 0px;
+      }
+      .links ul li a
+      { color: #fff;
+      font-family:Arial,sans-serif;
+      font-size:25px;
+      }
+      .last_footer
+      { 
+      text-align: center;
+      color: #fff; 
+      margin-top:10%;
+      border-top:1px solid rgba(0,0,0,0.6);
+      }
+  @media only screen and (max-width:900px)
+      {
+      .container 
+      {
+      width: 100%; 
+      position: fixed;
+      display:block;
+      }
+      .logo 
+      {
+      width: 74%;
+      display: block;
+      position: fixed; 
+      float: right; 
+      position: absolute; 
+      left: 20%;
+      }
+      .navbar 
+      {
+      height: 100vh;
+      width: 200px;
+      display: block;
+      position:fixed;
+      top: -5px;
+      left: -200px;
+      background: #fff;
+      font-color: #000;
+      float: left; 
+      z-index: 5;
+      }
+      .nav-mobile
+      {
+      display:inline-block;
+      vertical-align:middle;
+      width:250px;
+      height: 40px;
+      margin: 0;
+      padding:0;
+      position: absolute;
+      top:0px;
+      left: 0;
+      background: #;
+      padding:20px 0 0 10px;
+      bo-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+      z-index: 32;
+      }
+      .nav-icon 
+      {
+      cursor: pointer;
+      float: right;
+      z-index: 3;
+      position:absolute;
+      right:15px;
+      }
+      .nav-icon span
+      {
+      height: 2px;
+      width:20px ;
+      background:#efefef;
+      display: block; 
+      margin: 5px;
+      }
+      .navbar:hover
+      {
+      left:0; 
+      top: 50px; 
+      position:absolute; 
+      transition:.5s;
+      height: 100vh;
+      display:block;
+      position:fixed;
+      }
+      .navbar:hover .nav-icon:hover 
+      {
+      display: none;
+      position:absolute;
+      left: -20px;
+      }
+      .navbar ul 
+      {
+      padding-top: 20px;
+      }
+      .navbar li 
+      {
+      display: block; 
+      background:purple;
+      }
+      .navbar li a 
+      {
+      display:block;
+      color: #fffffff; 
+      font-weight:300;
+      }
+      .navbar ul li ul li:hover 
+      {}
+      .navbar ul li ul li
+      {
+      border-radius:50px;
+      }
+      /* End of header */
+      
+      
+      
+    .object {
+    
+    padding: 30px;
+    background: #fff;
+    
+    }
+      
+      
+      
+      }
+      
+      
+      
+      
+      /* icon */
+      .Icon 
+      { 
+      display:block;
+      background: #fff;
+      margin-left:25%;
+      margin-top: 2%;
+     
+      }
+      .Icon li a{
+      width:40px;
+      height:40px;
+      background: #fff;
+      text-align:center;
+      line-height:40px;
+      margin:0 5px;
+      font-size:18px;
+      display:block;
+      color:#000;
+      border-radius:50%;
+      }
+      footer 
+      {
+      
+      height: 220px;
+      width:100%;
+      background:purple;
+      display:block;
+      box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.6);
+      }
+      .links
+      {
+      float:left;
+      padding-right: 1px;
+      margin:;
+      width: 25%;
+      }
+      .links h4 
+      {
+      border-bottom: 0px solid #777;
+      box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.6);
+      color: #fff;
+      font-family:Tahoma,Arial,sans-serif;
+      font-size: 13px;
+      width: 93px;
+      padding:10px;
+      }
+      .links ul li
+      {
+      padding: 5px 0px;
+      }
+      .links ul li a 
+      { 
+      color: #fff;
+      font-family:Arial,sans-serif;
+      font-size:15px;
+      }
+      .last_footer 
+      { 
+      text-align: center; 
+      color: #777; 
+      margin-top:16%;
+      border-top:1px solid rgba(0,0,0,0.6);
+      font-size:12px;
+      }
+      
+      }
+      /***End of css****/
+      
+      
+      </style>
+      </head>
+      <body>
+      <div class="container">
+      <h2 class="logo">Wizard</h2>
+      <nav class="navbar">
+      <div class="nav-mobile">
+      <div class="nav-icon">
+      <span></span><span></span><span></span>
+      </div>
+      </div>
+      <ul>
+     <a href="#" > H</a><li><a href="1.html" >Home &nbsp;<i class="fas fa-home"></i></a></li>
+      
+      <li>
+      <a href="2.html" > About<span class="arrow-down"></span></a>
+      <ul class="dorpdown">
+      <li><a href="#" >Education</a></li>
+      <li><a href="#" >Hobby</a></li>
+      <li><a href="#" >Carrier </a></li>
+      <li><a href="#" > Dream </a></li>
+      </ul>
+      </li>
+      <li>
+      <a href="3.html" >Portfolio <span class="arrow-down"></span></a>
+      <ul class="dropdown">
+      <li><a href="#" >Web design </a></li>
+      <li><a href="#" >Application</a></li>
+      </ul>
+      </li>
+      <li><a href="4.html" >Youtube </a></li>
+      
+      <li><a href="5.html" class="c">Contact me</a></li>
+      </ul>
+      </nav>
+      </div>
+      <br><br><br><br>
+      
+      
+      
+  <div class="block" style="background: ed;" >
+  <h2 style="margin:0% 0% 20px 20%;" >Youtube(Test)</h2>
+
+
+ <p style="margin:0% 0% 20px 10%;" > This is my first video which 
+ is of my favourite song.
+ <br><br>
+  <video width="90%" loop controls autoplay="false"  muted="muted" src="Q.mp4">
+  </video>
+  
+ </p>
+  
+  
+  
+  <p style="margin:0% 0% 20px 10%;" > This is my first video which 
+  is of my favourite song.
+  <br><br>
+  <video width="90%" loop controls autoplay="false"  muted="muted" src=".mp4">
+  </video>
+  
+  </p>
+  
+  
+  <p style="margin:0% 0% 20px 10%;" > This is my first video which 
+  is one of my favourite song.
+  <br><br>
+  <video width="90%" loop controls autoplay="false"  muted="muted"  src=".mp4">
+  </video>
+  
+  </p>
+  
+  
+  <p style="margin:0% 0% 20px 10%;" > This is my first video which 
+  is of my favourite song.
+  <br><br>
+  <video width="90%" loop controls autoplay="false"  muted="muted" src=".mp4">
+  </video>
+  
+  </p>
+  
+ </div>
+  <p class="object">Note:👀👀👀:এখনো কোনো প্রকার অফিসিয়াল চ্যানেল নাই😩😩
+ । শুধু পেজটাকে খাবার দিলাম😊
+ ☺
+  </p>
+      
+      <section style="height: 60px; display: block; overflow: hidden; margin: 0px; background: #f0;" background="green">
+      <center>
+      <ul class="Icon">
+      <li><a href=""  class="icon"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href=""  class="icon"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="" class="icon"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      </center>
+      </section>
+      
+      
+      
+      
+      <footer>
+      <div class="links">
+      <h4>SOCIAL LINKS</h4>
+      <ul>
+      <li><a href="https://www.facebook.com/emamulhaque.emon.31" class="icon" ><i class="fab fa-facebook-square" id="icon" ></i></a><a href="https://www.facebook.com/emamulhaque.emon.31" >Facebook</a></li>
+      <li><a href="#" ><i class="fab fa-twiter"></i></a><a href="#" >Twiter</a> </li>
+      <li><a href="#" ><i class="fab fa-instragram"></i></a><a href="#" >Instragram</a> </li>
+      </ul>
+      </div>
+      <div class="links">
+      <h4>NEDDED LINKS</h4>
+      <ul>
+      <li><a href="#" ><i class="fab fa-youtube"></i></a><a href="#" >Youtube</a></li>
+      <li><a href="#" >Unknown </a> </li>
+      <li><a href="#" >Unknown </a></li>
+      </ul>
+      </div>
+      <div class="links">
+      <h4>EXTRA LINKS</h4>
+      <ul>
+      <li><a href="#" >Unknown </a></li>
+      <li><a href="#" >Unknown  </a></li>
+      <li><a href="#" >Unknown </a> </li>
+      </ul>
+      </div>
+      <div class="last_footer">
+      <p>All copyright&copy; reserved by<a href="1.html" > wizard.com</a></p>
+      </div>
+      </footer>
+      </body>
+      </html>
+      
+    
+      
